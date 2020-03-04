@@ -1,0 +1,28 @@
+
+{% include 'header.html' %}
+
+{% block content%}
+<div class="container">
+	<div class="justify-content-md-center">
+		<video></video>
+	</div>
+	<form>
+		<div class="form-group">
+			<label for="input-name">Nama</label>
+			<input type="text" class="form-control" name="nama" id="input-name">	
+		</div>
+		<div class="form-group">
+			<label for="input-nik">NIK</label>
+			<input type="text" class="form-control" name="nik" id="input-nik">	
+		</div>
+		<div class="form-group">
+			<label for="input-jabatan">Jabatan</label>
+			<input type="text" class="form-control" name="jabatan" id="input-jabatan">	
+		</div>
+		<button class="btn btn-primary">Submit</button>
+	</form>
+	<a href="/employees" method="GET">list of all employee stored in database</a>
+</div>
+ {% endblock %}
+
+ {% include 'footer.html' %}
